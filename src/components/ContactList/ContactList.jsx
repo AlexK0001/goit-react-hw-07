@@ -14,6 +14,10 @@ const ContactList = () => {
   // );
   const filteredContacts = useSelector(selectFilteredContacts);
 
+  if (!filteredContacts || filteredContacts.length === 0) {
+    return <p>No contacts found</p>;
+  }
+
   return (
     <ul>
       {filteredContacts.map(contact => (
