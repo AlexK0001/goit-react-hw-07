@@ -20,7 +20,7 @@ const ContactList = () => {
 
   return (
     <ul>
-      {filteredContacts.map(contact => (
+      {filteredContacts.map((contact) => (
         <Contact 
           key={contact.id} 
           id={contact.id} 
