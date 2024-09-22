@@ -22,7 +22,7 @@ const ContactList = () => {
           key={item.id} 
           // id={contact.id} 
           name={item.name} 
-          phone={item.phone} 
+          number={item.number} 
           {...contactsData}
         />
       ))}
