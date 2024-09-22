@@ -11,7 +11,8 @@ const Contact = ({ id, name, phone }) => {
 
   return (
     <li>
-      {name}: {phone}
+      <p>Name: {name}</p>
+      <p>Phone: {phone}</p>
       <button onClick={handleDelete}>Delete</button>
     </li>
   );

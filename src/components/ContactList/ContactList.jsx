@@ -5,13 +5,10 @@ import Contact from '../Contact/Contact';
 import contactsData from '../../contacts.json';
 // import { selectNameFilter } from '../../redux/filtersSlice'
 
-const ContactList = () => {
-  // const contacts = useSelector(selectContacts);
-  // const filter = useSelector(selectNameFilter);
 
-  // const filteredContacts = contacts.filter(contact =>
-  //   contact.name.toLowerCase().includes(filter.toLowerCase())
-  // );
+
+const ContactList = () => {
+ 
   const filteredContacts = useSelector(selectFilteredContacts);
 
   if (!filteredContacts || filteredContacts.length === 0) {
@@ -20,12 +17,12 @@ const ContactList = () => {
 
   return (
     <ul>
-      {filteredContacts.map((contact) => (
+      {filteredContacts.map((item) => (
         <Contact 
-          key={contact.id} 
-          id={contact.id} 
-          name={contact.name} 
-          phone={contact.phone} 
+          key={item.id} 
+          // id={contact.id} 
+          name={item.name} 
+          phone={item.phone} 
           {...contactsData}
         />
       ))}
