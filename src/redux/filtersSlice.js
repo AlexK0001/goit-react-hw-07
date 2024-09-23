@@ -5,6 +5,7 @@ const initialState = {
   number: '',
 };
 
+
 const filtersSlice = createSlice({
   name: 'filters',
   initialState,
