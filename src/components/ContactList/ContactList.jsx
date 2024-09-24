@@ -20,7 +20,7 @@ const ContactList = () => {
       {filteredContacts.map((item) => (
         <Contact 
           key={item.id} 
-          // id={contact.id} 
+          id={item.id} 
           name={item.name} 
           number={item.number} 
           {...contactsData}
