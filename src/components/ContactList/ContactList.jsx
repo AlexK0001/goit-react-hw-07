@@ -2,7 +2,7 @@
 import { useSelector } from 'react-redux';
 import { selectFilteredContacts  } from '../../redux/contactsSlice';
 import Contact from '../Contact/Contact';
-import contactsData from '../../contacts.json';
+// import contactsData from '../../contacts.json';
 // import { selectNameFilter } from '../../redux/filtersSlice'
 
 
@@ -23,7 +23,7 @@ const ContactList = () => {
           id={item.id} 
           name={item.name} 
           number={item.number} 
-          {...contactsData}
+          // {...contactsData}
         />
       ))}
     </ul>
